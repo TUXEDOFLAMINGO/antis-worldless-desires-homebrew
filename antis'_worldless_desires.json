@@ -216,7 +216,7 @@
 					]
 				},
 				{
-					"name": "Hymn of the Heart (Costs 3 Actions, Recharge 6)",
+					"name": "Hymn of the Heart (Costs 3 Actions)",
 					"entries": [
 						"The sexton emits a chorus of clicks and hums that shatter the focus of those unadapted to the Crimson Hadal. Each creature of the sexton’s choice within 150 feet that is not adapted to this realm must succeed on a {@dc 18} Intelligence saving throw or take 35 ({@damage 10d6}) psychic damage and be {@condition stunned} until the end of its next turn. On a successful save, a creature takes half as much damage and isn’t {@condition stunned}. Creatures currently {@condition restrained} by the sexton’s Violent Mutation feature make this saving throw with disadvantage. A {@condition deafened} creature is immune to this effect, unless it is {@condition restrained} by the sexton’s Violent Mutation feature."
 					]
