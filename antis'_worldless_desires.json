@@ -37,8 +37,8 @@
 				20
 			],
 			"hp": {
-				"formula": "10d20 + 60",
-				"average": 165
+				"formula": "12d20 + 72",
+				"average": 198
 			},
 			"speed": {
 				"swim": 120,
@@ -214,6 +214,12 @@
 					"entries": [
 						"The sexton targets up to four corpses within the domain, preserving them as if affected by the {@spell gentle repose} spell. These preserved creatures regain a faint semblance of consciousness—they can speak in halting, broken words but remain entirely immobile, still considered dead. Such creatures can be restored to life normally. However, if they are not revived before the domain ends, the environment consumes them, binding their essence to the Crimson Hadal forever. Once this occurs, they can be returned to life only by a {@spell wish} spell or similar magic; {@spell true resurrection} has no effect."
 					]
+				},
+				{
+					"name": "Hymn of the Heart (Costs 3 Actions, Recharge 6)",
+					"entries": [
+						"The sexton emits a chorus of clicks and hums that shatter the focus of those unadapted to the Crimson Hadal. Each creature of the sexton’s choice within 150 feet that is not adapted to this realm must succeed on a {@dc 18} Intelligence saving throw or take 35 ({@damage 10d6}) psychic damage and be {@condition stunned} until the end of its next turn. On a successful save, a creature takes half as much damage and isn’t {@condition stunned}. Creatures currently {@condition restrained} by the sexton’s Violent Mutation feature make this saving throw with disadvantage. A {@condition deafened} creature is immune to this effect, unless it is {@condition restrained} by the sexton’s Violent Mutation feature."
+					]
 				}
 			],
 			"conditionInflict": [
@@ -222,7 +228,8 @@
 				"grappled",
 				"paralyzed",
 				"poisoned",
-				"restrained"
+				"restrained",
+				"stunned"
 			],
 			"tokenHref": {
 				"type": "external",
@@ -231,9 +238,11 @@
 			"damageTags": [
 				"N",
 				"P",
-				"S"
+				"S",
+				"Y"
 			],
 			"savingThrowForced": [
+				"intelligence",
 				"strength",
 				"wisdom"
 			]
