@@ -1,0 +1,252 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TuxsHomebrewModule",
+				"abbreviation": "THM",
+				"full": "Tux's Homebrew Module",
+				"version": "1.0",
+				"authors": [
+					"Tux"
+				],
+				"convertedBy": [
+					"Tux"
+				],
+				"color": "d400ff",
+				"colorNight": "d400ff"
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Sexton of the Crimson Hadal",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"undead"
+				]
+			},
+			"source": "TuxsHomebrewModule",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"formula": "12d20 + 72",
+				"average": 198
+			},
+			"speed": {
+				"swim": 120,
+				"walk": 20
+			},
+			"str": 26,
+			"dex": 19,
+			"con": 23,
+			"int": 7,
+			"wis": 16,
+			"cha": 19,
+			"passive": 17,
+			"page": 3,
+			"save": {
+				"con": "+10",
+				"dex": "+8",
+				"cha": "+8"
+			},
+			"skill": {
+				"stealth": "+12",
+				"athletics": "+12",
+				"perception": "+7"
+			},
+			"cr": "12",
+			"resist": [
+				{
+					"special": "bludgeoning, piercing, and slashing from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"shortName": "Sexton",
+			"traitTags": [
+				"Ambusher",
+				"Incorporeal Movement",
+				"Water Breathing"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://pbs.twimg.com/media/GqDXoCSWYAA9hgY?format=jpg&name=4096x4096"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underwater",
+				"domain expansion"
+			],
+			"trait": [
+				{
+					"name": "Harrowing Mask",
+					"entries": [
+						"When a creature that can see the sexton's face starts its turn within 120 feet of the sexton, the creature must make a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the sexton's Harrowing Mask for the next 24 hours."
+					]
+				},
+				{
+					"name": "Bioluminescence",
+					"entries": [
+						"The sexton can control the bioluminescent markings along its body, revealing itself fully or in part while keeping the rest hidden in darkness. While not glowing, it has advantage on Dexterity (Stealth) checks made in dim light or darkness."
+					]
+				},
+				{
+					"name": "Water Breathing",
+					"entries": [
+						"The sexton can breathe only underwater."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sexton makes two Claw attacks and one Grasp attack. If it is currently grappling a creature, it can replace its Grasp attack with Violent Mutation. While grappling a creature, the sexton can make only one Claw attack against any creature it is not grappling."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}21 ({@damage 2d12 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Grasp",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}23 ({@damage 3d10 + 8}) piercing damage. If the target is a Large or smaller creature, it is {@condition grappled} (escape {@dc 20}), and pulled into an unoccupied space within 5 feet of sexton. The sexton can only grapple one creature at a time, and cannot use this attack while a creature is {@condition grappled} in this way."
+					]
+				},
+				{
+					"name": "Violent Mutation",
+					"entries": [
+						"The sexton launches string-like tendrils from its side at a creature it is grappling. The target must succeed on a {@dc 20} Strength saving throw or have {@dice 1d4 + 1} tendrils wrap around its limbs and burrow into its flesh, taking 9 ({@damage 2d8}) necrotic damage and becoming {@condition restrained}. While {@condition restrained} in this way, the target is pulled along with the sexton as it moves, remaining within 15 feet of it.",
+						"Each time the sexton uses this action on its turn afterwards, the {@condition restrained} creature takes 18 ({@damage 4d8}) necrotic damage as the tendrils inject a mutagenic substance, causing it to mutate rapidly. A new condition is imposed each time this action is used, as shown on the table below. The conditions are accumulative and last an hour after the creature is released from the sexton's hold.",
+						{
+							"type": "table",
+							"caption": "Violent Mutation",
+							"colLabels": [
+								"Turn",
+								"Effect"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"The creature is {@condition poisoned}, and takes an additional {@damage 2d6} necrotic damage whenever the sexton uses its Claw attacks against it."
+								],
+								[
+									"2",
+									"The creature's movement is halved."
+								],
+								[
+									"3",
+									"The creature is {@condition blinded} and the additional necrotic damage for Claw attacks raises to {@dice 4d6}."
+								],
+								[
+									"4",
+									"The creature is {@condition paralyzed} and they cannot heal while they are suffering under this condition."
+								]
+							]
+						},
+						"The target can use its action to make a {@dc 20} Strength (Athletics) check, freeing itself from {@dice 1d4} attached tendrils on a success. Each tendril can also be attacked and destroyed individually (AC 10; 5 hit points; same damage resistances and immunities as the sexton, but with vulnerability to slashing damage). The sexton can have tendrils attached to only one creature at a time, and it can detach them from a creature as a bonus action.",
+						"The effects of the sexton’s mutations can be ended by a {@spell lesser restoration} spell or similar magic. The mutations have no effect on undead, constructs, and oozes."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"senses": [
+				"blindsight 300 ft. (blind beyond this radius)",
+				"truesight 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"U"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"legendary": [
+				{
+					"name": "Lurk",
+					"entries": [
+						"The sexton moves up to its speed and takes the {@action Hide} action."
+					]
+				},
+				{
+					"name": "Blood Makes Bone (Costs 2 Actions)",
+					"entries": [
+						"The sexton targets up to four corpses within the domain, preserving them as if affected by the {@spell gentle repose} spell. These preserved creatures regain a faint semblance of consciousness—they can speak in halting, broken words but remain entirely immobile, still considered dead. Such creatures can be restored to life normally. However, if they are not revived before the domain ends, the environment consumes them, binding their essence to the Crimson Hadal forever. Once this occurs, they can be returned to life only by a {@spell wish} spell or similar magic; {@spell true resurrection} has no effect."
+					]
+				},
+				{
+					"name": "Hymn of the Heart (Costs 3 Actions, Recharge 6)",
+					"entries": [
+						"The sexton emits a chorus of clicks and hums that shatter the focus of those unadapted to the Crimson Hadal. Each creature of the sexton’s choice within 150 feet that is not adapted to this realm must succeed on a {@dc 18} Intelligence saving throw or take 35 ({@damage 10d6}) psychic damage and be {@condition stunned} until the end of its next turn. On a successful save, a creature takes half as much damage and isn’t {@condition stunned}. Creatures currently {@condition restrained} by the sexton’s Violent Mutation feature make this saving throw with disadvantage. A {@condition deafened} creature is immune to this effect, unless it is {@condition restrained} by the sexton’s Violent Mutation feature."
+					]
+				}
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"poisoned",
+				"restrained",
+				"stunned"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/habA4Ul.png"
+			},
+			"damageTags": [
+				"N",
+				"P",
+				"S",
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence",
+				"strength",
+				"wisdom"
+			],
+			"uniqueId": "234bc308-e221-4271-98d2-c39a6650721a"
+		}
+	]
+}
