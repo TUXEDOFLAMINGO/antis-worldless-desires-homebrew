@@ -278,7 +278,7 @@
 			"name": "Domain Expansion: Abyss Requiem (Tier 2)",
 			"lairActions": [],
 			"regionalEffects": [
-				"As a bonus action, you may sacrifice your life to expand your domain, using your corpse as a catalyst to form a realm where creatures thrive on their own demise. Your blood becomes water, your bones reefs that shelter denizens of the deep. Any creature entering this realm may use their reaction to take a breath, then must succeed on a Constitution saving throw against your Domain DC or take {@dice 2d8} force damage and be {@condition incapacitated} until the end of their next turn as they struggle beneath the abyssal pressure. For the next 5 rounds, all creatures within must fight to survive.",
+				"As a bonus action, you may sacrifice your life to expand your domain, using your corpse as a catalyst to form a realm where creatures thrive on their own demise. Your blood becomes water, your bones reefs that shelter denizens of the deep. All creatures that are within 75 feet of you are immediately pulled into this realm. They may use their reaction to take a breath, and must succeed on a Constitution saving throw against your Domain DC or take 2d8 force damage and be incapacitated until the end of their next turn as they struggle beneath the abyssal pressure. For the next 5 rounds, all creatures within must fight to survive.",
 				"Your ribs rise as colossal obelisks caging the newcomers, while your heart still beats in the distance. In combat, all creatures are treated as underwater and follow the rules for Underwater Combat (PHB p.198). Creatures maladapted to extreme aquatic depths cannot swim higher than 10 feet off the ground, and the area is obscured in darkness. Within a 150-foot circle, strange plantlike growths glow faintly when touched. A creature moving within 10 feet above the ground in this area is dimly lit until the end of its turn. Beyond this circle, the abyss is heavily obscured, overwhelming even {@sense darkvision} and {@sense truesight}.",
 				"Here dwells its reverent caretaker—{@creature sexton of the crimson hadal|TuxsHomebrewModule|The Sexton of the Crimson Hadal}. A natural inhabitant, it tends the domain’s health, using intruders’ corpses to feed the realm. Yet while the heart beats, the domain may spare chosen creatures, granting them the means to endure.",
 				"The user of this domain may adapt any number of creatures of their choice, granting them the ability to breathe underwater, a swimming speed equal to their walking speed, and 30 feet of blindsight. Additionally, up to four creatures may be blessed with the heart’s mutations. At the start of their turns, they roll a d4 and gain one of the following benefits for the domain’s duration. Once a mutation is claimed, no other creature can gain it, and that creature must reroll.",
@@ -308,7 +308,7 @@
 						],
 						[
 							"4",
-							"Your mind links with the domain's neural network. You gain resistance to all damage. Once per round, at the end of any creature’s turn, you can target a creature within 120 feet. If it is an ally, their next attack is a critical hit (natural 20) and deals an extra {@dice 4d10} force damage when determining additional damage for a critical hit. If it is a hostile creature, it must succeed on a DC 16 Intelligence saving throw or take {@dice 4d10} psychic damage and automatically fail its next attack roll, ability check, or saving throw. On a successful save, it suffers no effect."
+							"Your mind links with the domain's neural network. You gain resistance to all damage. Once per round, at the end of any creature’s turn, you can target a creature within 120 feet. If it is an ally, their next attack is a critical hit (natural 20) and deals an extra {@dice 4d10} force damage when determining additional damage for a critical hit. If it is a hostile creature, it must succeed on an Intelligence saving throw against your Domain DC or take {@dice 4d10} psychic damage and automatically fail its next attack roll, ability check, or saving throw. On a successful save, it suffers no effect."
 						]
 					]
 				},
@@ -320,3 +320,4 @@
 		}
 	]
 }
+
