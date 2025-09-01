@@ -318,6 +318,113 @@
 			"mythicEncounter": [],
 			"source": "TuxsHomebrewModule"
 		}
+	],
+	"item": [
+		{
+            "name": "Whalefall",
+            "source": "TuxsHomebrewModule",
+            "page": 1,
+            "type": "M",
+			"baseItem": "trident|PHB",
+            "rarity": "legendary",
+            "reqAttune": true,
+            "weaponCategory": "martial",
+			"property": ["V", "T"],
+            "dmg1": "1d6",
+            "dmg2": "1d8",
+            "dmgType": "P",
+            "range": "20/60",
+			"weight": "4",
+            "entries": [
+                "This gnarled bone trident was carved from the spine of a colossal leviathan that perished in the deepest ocean. Its death reshaped the seafloor, warping life around it into eerie parodies of the natural order, earning its name as the Crimson Hadal. A locathah who had become stranded within these depths had claimed a shard of the leviathan's spine, using it as a weapon to defend himself. In desperation, he turned the weapon upon himself, channeling the leviathan’s duality of life and death. From that act, the shard was reborn as Whalefall.",
+                {
+                    "type": "entries",
+                    "name": "Dormant",
+                    "entries": [
+                        "While Whalefall is in a dormant state, you gain a +1 bonus to attack and damage rolls made with this magic weapon, and it returns to the wielder's hand immediately after it is used to make a ranged attack. When you hit with an attack using this weapon, the target takes an extra {@damage 1d6} necrotic damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Awakened",
+                    "entries": [
+                        "When Whalefall reaches an awakened state, you gain the following benefits:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "The weapon's bonus to attack and damage rolls increases to +2.",
+                                "As a bonus action, you can manifest a fragment of the Crimson Hadal's influence in a 20-foot radius sphere centered on you for the next minute. The additional necrotic damage dealt by this weapon increases to {@damage 3d6} to creatures within the aura. Additionally, this aura allows you to strike targets on the Ethereal Plane within the radius, though it provides no special ability to perceive such entities. You can't use this property again until you finish a short or long rest.",
+                                "You can cast the {@spell gentle repose} spell from the weapon as an action, requiring no components. This property can't be used again until the next dawn."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Exalted",
+                    "entries": [
+                        "When Whalefall reaches an exalted state, it gains the following properties:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "The weapon's bonus to attack and damage rolls increases to +3.",
+                                "The extra necrotic damage dealt when you hit a creature within the aura increases to {@damage 4d6}.",
+                                "When you hit with a ranged attack using this weapon, you may consume a use of the aura or end it prematurely to deal an additional {@damage 8d6} necrotic damage to the target. This damage replaces the additional necrotic damage provided by this weapon's dormant state. The target must then succeed on a {@dc 17} Constitution saving throw or become {@condition poisoned} and have their movement speed halved for 1 minute. Undead, constructs, and oozes automatically succeed on the saving throw.",
+                                "When a creature dies within the radius of the aura or as a result of the special ranged attack provided by this weapon, you regain the ability to manifest the aura as if you had taken a short or long rest."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "bonusWeapon": "+1",
+            "ability": {
+                "static": {
+                    "damage": [
+                        {
+                            "damageType": "necrotic",
+                            "damage": "1d6"
+                        }
+                    ]
+                },
+                "bonus": [
+                    {
+                        "name": "Returning Weapon",
+                        "entries": [
+                            "This weapon returns to the wielder's hand immediately after it is used to make a ranged attack."
+                        ]
+                    },
+                    {
+                        "name": "Crimson Hadal's Aura",
+                        "entries": [
+                            "As a bonus action, you can manifest an aura in a 20-foot radius sphere centered on you for 1 minute. While the aura is active, the extra necrotic damage from this weapon increases to {@damage 3d6} for creatures inside it, and you can strike targets on the Ethereal Plane within the radius. You can't use this property again until you finish a short or long rest."
+                        ],
+                        "usages": [
+                            {
+                                "type": "recharge",
+                                "recharge": "SR"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Spellcasting",
+                        "entries": [
+                            "You can cast the {@spell gentle repose} spell from the weapon as an action, requiring no components. This property can't be used again until the next dawn."
+                        ],
+                        "usages": [
+                            {
+                                "type": "day",
+                                "times": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Whalefall Strike",
+                        "entries": [
+                            "When you hit with a ranged attack, you can consume a use of the Crimson Hadal's Aura to deal an additional {@damage 8d6} necrotic damage (replacing the normal extra damage). The target must make a {@dc 17} Constitution saving throw or be {@condition poisoned} and have its speed halved for 1 minute. Undead, constructs, and oozes automatically succeed. If a creature dies from this attack, you regain the use of your Crimson Hadal's Aura."
+                        ]
+                    }
+                ]
+            }
+        }
 	]
 }
-
