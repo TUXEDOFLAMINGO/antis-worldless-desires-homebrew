@@ -561,7 +561,7 @@
 							"items": [
 								"The weapon's bonus to attack and damage rolls increases to +3.",
 								"As an action, you can call forth a spirit from the depths using Whalefall. It manifests in an unoccupied space that you can see within 30 feet. This corporeal form uses the {@creature depth spirit|TuxsHomebrewModule|Depth Spirit} stat block. When you summon the creature, choose Gorger, Collector, or Lurker. The creature resembles a monstrous entity of that kind, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or after 1 hour (requiring concentration). The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger. This property can't be used again until the next dawn.",
-								"When a creature dies within the radius of the aura or from the Depth Spirit's attacks, you regain the ability to manifest the aura as if you had taken a short or long rest if you had used it already."
+								"When a creature dies within the radius of the aura or from the Depth Spirit's attacks, you regain the ability to manifest the aura as if you had taken a short or long rest."
 							]
 						}
 					]
@@ -625,6 +625,7 @@
 		}
 	]
 }
+
 
 
 
