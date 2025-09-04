@@ -119,7 +119,7 @@
 				{
 					"name": "Multiattack (Gorger Only)",
 					"entries": [
-						"The spirit makes two attacks."
+						"The spirit makes three attacks."
 					]
 				},
 				{
@@ -625,4 +625,5 @@
 		}
 	]
 }
+
 
