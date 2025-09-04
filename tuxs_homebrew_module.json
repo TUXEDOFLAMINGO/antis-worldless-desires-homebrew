@@ -516,7 +516,7 @@
 			"type": "M",
 			"baseItem": "trident|PHB",
 			"rarity": "legendary",
-			"reqAttune": true,
+			"reqAttune": "by a Ranger",
 			"weaponCategory": "martial",
 			"property": [
 				"V",
@@ -625,3 +625,4 @@
 		}
 	]
 }
+
